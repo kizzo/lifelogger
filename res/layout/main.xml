@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hello" />
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RadioButton android:id="@+id/radio_pic_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/camera_service_pic_mode"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton android:id="@+id/radio_video_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/camera_service_video_mode"
+            android:onClick="onRadioButtonClicked"/>
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/chkCameraService"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/camera_service_activate" />
+
+    <CheckBox
+        android:id="@+id/chkUploadService"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/upload_service_activate" />
+
+    <CheckBox
+        android:id="@+id/chkCommandService"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/command_service_activate" />
+
+    <Button 
+        android:id="@+id/btn_exit"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_margin = "8dip"
+        android:textSize="24dip"
+        android:textStyle="bold"            
+        android:text="@string/action_exit"/>
+
+</LinearLayout>
